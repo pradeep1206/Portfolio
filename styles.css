@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Giga:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+ /* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonts */
+  body {
+    font-family: "Bona Nova SC", 'serif';
+    background-color: #f5efef;
+    color: #333;
+    line-height: 1.6;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Grid */
+  .bd_grid {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Header / Navbar */
+  .header {
+    background-color: #090909;
+    box-shadow: 0 2px 4px rgba(248, 247, 247, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .nav_logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2090e6;
+  }
+  
+  .nav_menu {
+    display: flex;
+  }
+  
+  .nav_list {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav_link {
+    font-weight: 500;
+    color: #fcf9f9;
+    transition: color 0.3s;
+  }
+  
+  .nav_link:hover,
+  .nav_link.active {
+    color: #007bff;
+  }
+  
+  .nav_toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  /* Home Section */
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    background-image:url(Images/6402687_3274764.jpg);
+  }
+  
+  .home_data {
+    max-width: 600px;
+  }
+  
+  .home_title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home_title-color {
+    color: #007bff;
+  }
+  
+  .home_subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .home_social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .home_social_icon i {
+    font-size: 1.8rem;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .home_social_icon i:hover {
+    color: #007bff;
+  }
+  
+  .home_image img {
+    width: 500px;
+    max-width: 100%;
+  }
+  .res_image img{
+    width: 400px;
+    height: 400px;
+    margin-left: 600px;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #f9f9f9;
+    background-image:url(Images/6402687_3274764.jpg);
+    padding: 4rem 3rem;
+    text-align: center;
+  }
+  
+  .about_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .about_image img {
+    width: 250px;
+  }
+  
+  .about_text {
+    max-width: 600px;
+    font-size: 1.1rem;
+  }
+  
+  /* Skills Section */
+  .skills {
+    background-color: #fff;
+    background-image:url(Images/6402687_3274764.jpg);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .skills_container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills_container .col-2 {
+    margin: 10px;
+  }
+  
+  /* Project Section */
+  .project {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .project_image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .project_title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Resume Section */
+   .resume_container button {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume_container button:hover {
+    background-color: #0056b3;
+  }
+   
+  
+  /* Contact Section */
+  .contact_section {
+    background-color: #f9f9f9;
+    background-image: url(Images/6402687_3274764.jpg);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .contact_container p {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+  }
+  
+  /* Section Title */
+  .section_title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #007bff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav_menu {
+      display: none;
+      flex-direction: column;
+      background: #fff;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+    }
+  
+    .nav_toggle {
+      display: block;
+    }
+  
+    .nav_menu.show {
+      display: flex;
+    }
+  
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about_container {
+      flex-direction: column;
+    }
+  }
+  .resu{
+   margin-left: 700px;
+   border: none;
+  }
